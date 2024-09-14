@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Homepage</title>
+  </head>
+  <body>
+    <header>
+      <div class="box1">
+        <h1>Saleh Alkarabubi</h1>
+        <img src="Tripolies.jpg" alt="etwas" />
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+          <li>
+            <a href="cv.html"><i class="fas fa-info-circle"></i> CV</a>
+          </li>
+          <li>
+            <a href="#" id="loginLink"
+              ><i class="fas fa-sign-in-alt"></i> Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="loginFormContainer" style="display: none">
+      <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <br /><br />
+        <button type="submit">Login</button>
+      </form>
+      <div id="messageDisplay"></div>
+    </div>
+
+    <footer class="container f">
+      <p>Saleh Omer Ali Alkarabubi</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

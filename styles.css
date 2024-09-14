@@ -1,0 +1,159 @@
+/* Resetting default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5e8e8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box1 {
+  text-align: center;
+  padding: 20px;
+  background-image: url("LIBYA\ DM.jpg");
+  background-repeat: no-repeat;
+}
+
+.box1-image {
+  width: 100%;
+  max-width: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  animation-name: slideUp;
+  animation-duration: 2s;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.box2 {
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive design adjustments */
+@media only screen and (max-width: 600px) {
+  .box1 h1 {
+    font-size: 1.5em;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+footer p {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #777373;
+  color: #fff;
+  border-radius: 0 0 8px 8px;
+}
+
+#loginFormContainer {
+  display: none;
+  background-color: #deeef3;
+  padding: 25px;
+  margin: 20px auto;
+  width: 400px; /* Increased the width */
+  text-align: left;
+  border: 6px solid #424141;
+  border-radius: 2ch;
+  color: #11057a;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3cqb;
+  font-weight: bold;
+}
+
+#username,
+#password {
+  flex: 1;
+  padding: 10px; /* Padding inside input fields */
+  font-size: 16px; /* Font size of the text inside input fields */
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Ensure padding and border fit within specified width */
+}
+
+#username:focus,
+#password:focus {
+  border-color: #007bff; /* Change the border color on focus */
+  box-shadow: 0 0 7px rgba(0, 123, 255, 0.5); /* Add a subtle shadow effect on focus */
+  outline: none; /* Remove the default outline */
+  background-color: #80ca86;
+}
+
+#messageDisplay {
+  margin-top: 10px;
+  color: red;
+}
+
+/* Optional: Hover effect for button */
+#loginForm button:hover {
+  background-color: yellow; /* Darker green when hovering */
+}
+
+/* Style the submit button */
+#loginForm button {
+  width: 100%; /* Adjust width as needed */
+  padding: 10px; /* Padding inside button */
+  background-color: rgb(168, 193, 238); /* Green background color */
+  color: rgb(236, 35, 8); /* Text color */
+  border: #363131; /* No border */
+  border-radius: 1ch; /* Rounded corners */
+  cursor: pointer; /* Cursor style */
+  align-items: center;
+  font-size: x-large;
+  font-weight: bold;
+}
